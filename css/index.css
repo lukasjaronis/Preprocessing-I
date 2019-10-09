@@ -168,6 +168,13 @@ body {
     transform: translateY(-15px);
   }
 }
+hr {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background: black;
+  height: 0.2rem;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -271,10 +278,49 @@ header nav ul li a:hover {
 .skills .row table tr td {
   text-align: center;
   padding: 1rem;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .skills .row h1 {
   margin: 1rem;
   font-weight: 900;
   font-size: 2rem;
+}
+.work .row {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+.work .row table {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .row table tr td {
+  text-align: center;
+  padding: 1rem;
+}
+.work .row h1 {
+  margin: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  font-size: 1rem;
+  font-weight: 900;
 }
