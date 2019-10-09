@@ -147,6 +147,7 @@ body {
 	max-width: 80rem;
 }
 
+
 * {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -167,11 +168,25 @@ body {
 
 	&:hover {
 		box-shadow: 2px 2px 10px black;
+
 		@keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-			40% {transform: translateY(-30px);} 
-			60% {transform: translateY(-15px);} 
-		 }
+
+			0%,
+			20%,
+			50%,
+			80%,
+			100% {
+				transform: translateY(0);
+			}
+
+			40% {
+				transform: translateY(-30px);
+			}
+
+			60% {
+				transform: translateY(-15px);
+			}
+		}
 	}
 
 	.primarybutton() {
@@ -185,7 +200,7 @@ body {
 		border: none;
 
 		&:hover {
-			color:orange;
+			color: orange;
 		}
 	}
 
@@ -247,6 +262,7 @@ hr {
 
 // Pre-Layout //
 
+// navbar //
 
 header {
 	nav {
@@ -254,6 +270,13 @@ header {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
+
+			@media (max-width: 800px) {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
 			li {
 				margin: 1rem;
 
@@ -264,7 +287,7 @@ header {
 					color: black;
 
 					&:hover {
-						color:orange;
+						color: orange;
 						font-weight: 900;
 					}
 				}
@@ -272,7 +295,6 @@ header {
 		}
 
 	}
-
 }
 
 // Sections //
@@ -281,6 +303,22 @@ header {
 	.row {
 		display: flex;
 		justify-content: center;
+
+		@media (max-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 2rem;
+		}
+
+		@media (max-width: 500px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 2rem;
+		}
 
 		.about-img {
 			max-width: 100%;
@@ -293,6 +331,18 @@ header {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
+			@media (max-width: 768px) {
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			
+			@media (max-width: 500px) {
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
 
 			button {
 				.animation-box.primarybutton();
@@ -307,12 +357,49 @@ header {
 		display: flex;
 		justify-content: center;
 
+		@media (max-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin: 2rem;
+			padding: 2rem;
+		}
+
+		@media (max-width: 500px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 2rem;
+		}
+
 		.col {
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
 			font-size: 1.2rem;
+
+			@media (max-width: 768px) {
+				flex-direction: column;
+				flex-wrap: wrap;
+				width: inherit;
+			}
+
+			@media (max-width: 500px) {
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			p {
+				@media (max-width: 768px) {
+					text-align: center;
+					margin: 1rem;
+					padding: 1rem;
+
+				}
+			}
+		}	
 		}
 
 		table {
@@ -331,7 +418,7 @@ header {
 					border-bottom: 1px solid black;
 				}
 			}
-	
+
 		}
 
 		h1 {
@@ -340,7 +427,7 @@ header {
 			font-size: 2rem;
 		}
 	}
-}
+
 
 .work {
 	.row {
@@ -349,6 +436,23 @@ header {
 		justify-content: center;
 		align-items: center;
 
+		@media (max-width: 768px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 2rem;
+			padding: 2rem;
+		}
+
+		@media (max-width: 500px) {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 2rem;
+		}
+
 		.col {
 			display: flex;
 			flex-direction: column;
@@ -356,6 +460,18 @@ header {
 			align-items: center;
 			flex-wrap: wrap;
 			font-size: 1.2rem;
+
+			@media (max-width: 768px) {
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+
+			@media (max-width: 500px) {
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
 		}
 
 		table {
@@ -367,12 +483,14 @@ header {
 			align-items: center;
 
 			tr {
+				border: 1px solid black;
+
 				td {
 					text-align: center;
 					padding: 1rem;
 				}
 			}
-	
+
 		}
 
 		h1 {

@@ -214,6 +214,13 @@ header nav ul {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header nav ul li {
   margin: 1rem;
 }
@@ -231,6 +238,24 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
 .about .row .about-img {
   max-width: 100%;
   width: 100%;
@@ -241,6 +266,20 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .about .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 .about .row .col button {
   font-weight: 500;
@@ -259,6 +298,24 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .skills .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .skills .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
 .skills .row .col {
   display: flex;
   flex-direction: column;
@@ -266,7 +323,28 @@ header nav ul li a:hover {
   align-items: center;
   font-size: 1.2rem;
 }
-.skills .row table {
+@media (max-width: 768px) {
+  .skills .row .col {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: inherit;
+  }
+}
+@media (max-width: 500px) {
+  .skills .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .skills .row .col p {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+.skills table {
   margin: 1rem;
   padding: 1rem;
   display: flex;
@@ -275,12 +353,12 @@ header nav ul li a:hover {
   align-items: center;
   box-shadow: 1px 10px 10px black;
 }
-.skills .row table tr td {
+.skills table tr td {
   text-align: center;
   padding: 1rem;
   border-bottom: 1px solid black;
 }
-.skills .row h1 {
+.skills h1 {
   margin: 1rem;
   font-weight: 900;
   font-size: 2rem;
@@ -291,6 +369,25 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .work .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .work .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
 .work .row .col {
   display: flex;
   flex-direction: column;
@@ -299,6 +396,20 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  .work .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .work .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .work .row table {
   margin: 1rem;
   padding: 1rem;
@@ -306,6 +417,9 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.work .row table tr {
+  border: 1px solid black;
 }
 .work .row table tr td {
   text-align: center;
