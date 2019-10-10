@@ -1,1 +1,487 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 2rem auto 2rem auto;
+  max-width: 80rem;
+}
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 98%;
+}
+.animation-box {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.animation-box:hover {
+  box-shadow: 2px 2px 10px black;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+hr {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background: black;
+  height: 0.2rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.row _r {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 80rem;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.col {
+  display: flex;
+  margin: 1rem;
+}
+.col-1-of-1 {
+  justify-content: center;
+  width: calc(100% - 2rem);
+}
+@media (max-width: 800px) {
+  .col-1-of-1 {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 500px) {
+  .col-1-of-1 {
+    width: calc(100% - 2rem);
+  }
+}
+.col-1-of-2 {
+  justify-content: center;
+  width: calc(50% - 2rem);
+}
+@media (max-width: 800px) {
+  .col-1-of-2 {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 500px) {
+  .col-1-of-2 {
+    width: calc(100% - 2rem);
+  }
+}
+.col-1-of-3 {
+  justify-content: center;
+  width: calc(33% - 2rem);
+}
+@media (max-width: 800px) {
+  .col-1-of-3 {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 500px) {
+  .col-1-of-3 {
+    width: calc(100% - 2rem);
+  }
+}
+.col-1-of-4 {
+  justify-content: center;
+  width: calc(25% - 2rem);
+}
+@media (max-width: 800px) {
+  .col-1-of-4 {
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 500px) {
+  .col-1-of-4 {
+    width: calc(100% - 2rem);
+  }
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header nav ul li {
+  margin: 1rem;
+}
+header nav ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+header nav ul li a:hover {
+  color: orange;
+  font-weight: 900;
+}
+.about .row {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+.about .row .about-img {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+.about .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .about .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .about .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.about .row .col button {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 1rem;
+  height: 2rem;
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  border: none;
+}
+.about .row .col button:hover {
+  color: orange;
+}
+.skills .row {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .skills .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .skills .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+.skills .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .skills .row .col {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: inherit;
+  }
+}
+@media (max-width: 500px) {
+  .skills .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .skills .row .col p {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+.skills table {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 10px 10px black;
+}
+.skills table tr td {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+.skills h1 {
+  margin: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.work .row {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .work .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .work .row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+.work .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .work .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .work .row .col {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.work .row table {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .row table tr {
+  border: 1px solid black;
+}
+.work .row table tr td {
+  text-align: center;
+  padding: 1rem;
+}
+.work .row h1 {
+  margin: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: orange;
+  font-size: 1rem;
+  font-weight: 900;
+  width: calc(100% - 2rem);
+  height: 2rem;
+  margin: 0 auto;
+}
