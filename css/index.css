@@ -140,6 +140,9 @@ body {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+.wrapper {
+  max-width: 98%;
+}
 .animation-box {
   margin: 2rem;
   display: flex;
@@ -472,9 +475,13 @@ header nav ul li a:hover {
 }
 .copyright {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   background: orange;
   font-size: 1rem;
   font-weight: 900;
+  width: calc(100% - 2rem);
+  height: 2rem;
+  margin: 0 auto;
 }

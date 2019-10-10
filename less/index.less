@@ -153,6 +153,10 @@ body {
 	box-sizing: border-box;
 }
 
+.wrapper {
+	max-width: 98%;
+}
+
 // animation + mixin //
 
 
@@ -374,7 +378,7 @@ header {
 				align-items: center;
 				width: 100%;
 			}
-			
+
 			@media (max-width: 500px) {
 				justify-content: center;
 				align-items: center;
@@ -428,42 +432,42 @@ header {
 				align-items: center;
 				width: 100%;
 			}
+
 			p {
 				@media (max-width: 768px) {
 					text-align: center;
 					margin: 1rem;
 					padding: 1rem;
-
 				}
 			}
-		}	
-		}
-
-		table {
-			margin: 1rem;
-			padding: 1rem;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			box-shadow: 1px 10px 10px black;
-
-			tr {
-				td {
-					text-align: center;
-					padding: 1rem;
-					border-bottom: 1px solid black;
-				}
-			}
-
-		}
-
-		h1 {
-			margin: 1rem;
-			font-weight: 900;
-			font-size: 2rem;
 		}
 	}
+
+	table {
+		margin: 1rem;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 1px 10px 10px black;
+
+		tr {
+			td {
+				text-align: center;
+				padding: 1rem;
+				border-bottom: 1px solid black;
+			}
+		}
+
+	}
+
+	h1 {
+		margin: 1rem;
+		font-weight: 900;
+		font-size: 2rem;
+	}
+}
 
 
 .work {
@@ -541,9 +545,13 @@ header {
 
 .copyright {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	background: orange;
 	font-size: 1rem;
 	font-weight: 900;
+	width: calc(100% - 2rem);
+	height: 2rem;
+	margin: 0 auto;
 }
